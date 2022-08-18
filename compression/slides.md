@@ -45,9 +45,12 @@ $$ = 4320000 \text{ bytes}$$
 
 ## **Run Length Encoding**
 
-a method of compression that describes how many times a character or text is repeated
+* a method of compression that describes how many times a character or text is repeated
 
-Instead of `000001111111` &rarr; `5 0 7 1`
+* starting from left to right, we start counting how many times `1` is repeated, then how many times `0` is repeated, etc.
+
+
+Instead of `000001111111` &rarr; `0 5 7`
 
 ---
 
@@ -69,6 +72,14 @@ Which type of compression?
 </div>
 
 Which type of compression?
+
+---
+
+### Takeaway
+
+* Run Length encoding is a *lossless* compression
+* *Lossy* compression generally allows for faster transmission
+    * since we threw out bits, we can send a message in less time 
 
 ---
 
@@ -105,5 +116,6 @@ also called *space saving*
 
 1. Compressing data saves us bits!
 2. Compression can remove unnecessary data (**lossy**)
+    * generally faster transmission speed
 3. Compression can just restructure data (**lossless**)
 4. Compression methods work better for large data
