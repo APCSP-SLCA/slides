@@ -25,28 +25,14 @@ We can represent analog data as digital data, but the computer will have to appr
 <div>
     <img src="duck_5x5.png" style="width:370px;">
     <img src="duck_50x50.png" style="width:370px;">
-    <img src="../../../../assets/images/duck.png" style="width:370px;">
+    <img src="duck.png" style="width:370px;">
 </div>
 
 We can get closer and closer to the real duck, but will never be able to fully and accurately represent the duck on a machine.
 
 ---
 
-![bg contain](analog_digital_signal.png)
-
----
-
-### Audio Formats
-
-* MIDI: **M**usical **I**nstrument **D**igital **I**nterface
-    * way to describe pitch and duration of note
-    * computer synthesizes these notes
-    * not an actual recording
-
-* For *recorded music*, MIDI, AAC, MP3, WAV formats
-    * WAV is uncompressed &rarr; high quality
-    * MP3 is compressed &rarr; lower quality
-        * Which type of compression?
+![width:900px](simple.png)
 
 ---
 
@@ -58,6 +44,14 @@ We can get closer and closer to the real duck, but will never be able to fully a
 * **bit depth**: number of bits used in each snapshot
 
 * sampling frequency x bit depth = number of bits for one second of music
+
+---
+
+![width:900px](simple.png)
+
+---
+
+![width:900px](complex.png)
 
 ---
 
@@ -99,7 +93,17 @@ If your song is recorded in a 32-bit audio format, and your song was recorded at
 
 ---
 
-![bg contain](analog_signal.png)
+### Audio Formats
+
+* MIDI: **M**usical **I**nstrument **D**igital **I**nterface
+    * way to describe pitch and duration of note
+    * computer synthesizes these notes
+    * not an actual recording
+
+* For *recorded music*, MIDI, AAC, MP3, WAV formats
+    * WAV is uncompressed &rarr; high quality
+    * MP3 is compressed &rarr; lower quality
+        * Which type of compression?
 
 ---
 
@@ -110,3 +114,25 @@ If your song is recorded in a 32-bit audio format, and your song was recorded at
 * JPEG &rarr; lossy compression, 24-bit color
 * PNG &rarr; lossless compression, 24-bit color
 * SVG describes equations
+
+---
+
+## **Metadata**
+
+**metadata**: data about data
+
+image formats will contain not only the raw binary data, but also information about:
+
+<Style scoped>
+    section > ul {
+        font-size: 28px;
+    }
+</style>
+
+* when the image was created
+* when the image was last modified
+* when the picture was taken
+* where the picture was taken
+* the size of the image
+* the type of color scheme used
+    * black and white, or color
